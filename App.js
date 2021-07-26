@@ -1,18 +1,14 @@
 import React from 'react';
 import {StyleSheet, View, Text,ImageBackground} from 'react-native';
 //& components
-import CarItem from './components/CarItem';
-
+import CarList from './components/CarList';
+import Header from './components/Header';
 
 const App = () => {
   return (
     <View style={styles.container}>
-      <CarItem 
-        name="Model X"
-        tagLine="Order Online for"
-        tagLineCTA="Touchless Delivery"
-        image={require('./assets/images/ModelX.jpeg')}
-      />
+      <Header />
+      <CarList />
     </View>
   );
 };
