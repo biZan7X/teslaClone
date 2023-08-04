@@ -29,7 +29,6 @@
   },
   "np": {
     "testScript": "test:src",
-    "private": true,
     "yolo": true,
     "anyBranch": true
   }
