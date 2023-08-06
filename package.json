@@ -27,6 +27,13 @@
   "jest": {
     "preset": "react-native"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/biswanathTewari/teslaClone.git"
+  },
+  "bugs": {
+    "url": "https://github.com/biswanathTewari/teslaClone/issues"
+  },
   "np": {
     "testScript": "test:src",
     "yolo": true,
