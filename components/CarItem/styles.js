@@ -33,5 +33,4 @@ export default StyleSheet.create({
     bottom: 50,
     width: '100%',
   },
-  someRandomStyle: {},
 });
