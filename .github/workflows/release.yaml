@@ -1,0 +1,22 @@
+name: release
+'on':
+  workflow_dispatch: # To trigger manual build
+  release:
+    types: [published] # only run the workflow when a new release has been published
+
+jobs:
+  build-android:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set up Homebrew
+        id: set-up-homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
